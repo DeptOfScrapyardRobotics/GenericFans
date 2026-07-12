@@ -207,8 +207,7 @@ $tach_in->close();
 ```php
 <?php
 
-use BareMetal\Actuation\Fans\TachometerComponent;
-use DeptOfScrapyardRobotics\Actuators\GenericFans\GenericTachometer;
+use BareMetal\Sensors\Speed\TachometerComponent;use DeptOfScrapyardRobotics\Actuators\GenericFans\GenericTachometer;
 
 $tach = new TachometerComponent(new GenericTachometer($tach_in));
 $rpm = $tach->rpm();

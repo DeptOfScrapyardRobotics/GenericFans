@@ -2,12 +2,12 @@
 
 namespace DeptOfScrapyardRobotics\Actuators\GenericFans;
 
-use BareMetal\Contracts\Sensors\Speed\MeasuresRPM;
 use BareMetal\Sensors\Sensor;
-use GPIO\Contracts\Digital\EdgeEvent;
 use GPIO\Digital\Input\DigitalInput;
+use GPIO\Contracts\Digital\EdgeEvent;
+use BareMetal\Contracts\Sensors\Speed\RPMReadings;
 
-class GenericTachometer extends Sensor implements MeasuresRPM
+class GenericTachometer extends Sensor implements RPMReadings
 {
     public function __construct(
         protected DigitalInput $input,

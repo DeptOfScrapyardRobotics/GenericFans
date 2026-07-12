@@ -19,9 +19,9 @@
         "php": "^8.3",
         "waveforms/pwm": "^0.5.0",
         "waveforms/digital": "^0.5.0",
+        "bare-metal/sensors": "^0.5.0",
         "bare-metal/actuation": "^0.5.0",
         "bare-metal/contracts": "^0.5.0",
-        "bare-metal/sensors": "^0.5.0",
         "scrapyard-io/nuts-and-bolts": "^0.5.0"
     },
     "suggest": {
