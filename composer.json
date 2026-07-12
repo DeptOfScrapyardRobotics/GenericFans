@@ -1,0 +1,47 @@
+{
+    "name": "dept-of-scrapyard-robotics/generic-fans",
+    "description": "Drive Fans directly over PWM/DigitalPins with PHP",
+    "type": "library",
+    "version": "0.5.0",
+    "keywords": [
+        "framework",
+        "scrapyard-io"
+    ],
+    "license": "MIT",
+    "homepage": "https://dosr.projectsaturnstudios.com",
+    "authors": [
+        {
+            "name": "Angel Gonzalez",
+            "email": "angel@projectsaturnstudios.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "waveforms/pwm": "^0.5.0",
+        "waveforms/digital": "^0.5.0",
+        "bare-metal/actuation": "^0.5.0",
+        "bare-metal/contracts": "^0.5.0",
+        "bare-metal/sensors": "^0.5.0",
+        "scrapyard-io/nuts-and-bolts": "^0.5.0"
+    },
+    "suggest": {
+        "microscrap/scrapyard-posix-drivers": "^0.5.0 - for driving over DigitalPins",
+        "microscrap/scrapyard-native-drivers": "^0.5.0 - for driving over PWM",
+        "dept-of-scrapyard-robotics/pca9685": "^0.5.0 - I2C PWM expander (not yet wired)"
+    },
+    "autoload": {
+        "psr-4": {
+            "DeptOfScrapyardRobotics\\Actuators\\GenericFans\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DeptOfScrapyardRobotics\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
